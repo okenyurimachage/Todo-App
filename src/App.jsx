@@ -35,8 +35,9 @@ const App = () => {
     //prevent reload of the page once the form is submitted
     e.preventDefault();
 
+//set unique id
     const newTodo = {
-      //set unique id
+      
       id: new Date().getTime(),
       text: todo,
       completed: false,
@@ -92,7 +93,7 @@ const App = () => {
       {todos.map((todo) => (
         <div key={todo.id} className="todo">
           <div className="todo-text">
-            // checked once task is completed
+
             <input
               type="checkbox"
               id="completed"
